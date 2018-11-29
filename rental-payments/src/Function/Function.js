@@ -91,7 +91,7 @@ export function firstPaymentDetail (startDateInMS,paymentDay,rent,frequency){
     const startDay = new Date(startDateInMS).getDay(); // the day start
     const days = Math.abs(paymentDay - startDay)+1;
     const toDateInMS = startDateInMS + (days-1)*24*60*60*1000;
-    const amount = (getRentPerDay(rent)*days).toFixed(1);
+    const amount = "$"+(getRentPerDay(rent)*days).toFixed(1);
     const to = dateFormatConversion(toDateInMS);
     const from = dateFormatConversion(startDateInMS);
     const nextToDateInMS = toDateInMS + frequency*7*24*60*60*1000;
@@ -122,7 +122,7 @@ export function paymentDetail (data){
             fromDateInMS = toDateInMS - (frequency*7 - 1)*24*60*60*1000;
             from = dateFormatConversion(fromDateInMS);
             days = frequency * 7;
-            amount = rent * frequency;
+            amount = "$"+rent * frequency;
             id = i
             paymentDetail.push({ from, to, days, amount, id})
             nextToDateInMS = toDateInMS + frequency*7*24*60*60*1000;
@@ -133,7 +133,7 @@ export function paymentDetail (data){
     from = dateFormatConversion(fromDateInMS);
     to = dateFormatConversion(endDateInMS);
     days = (endDateInMS - fromDateInMS) / (24*60*60*1000);
-    amount = (getRentPerDay(rent)*days).toFixed(1);
+    amount = "$"+(getRentPerDay(rent)*days).toFixed(1);
     id = i
     paymentDetail.push({ from, to, days, amount, id});
     return paymentDetail;
