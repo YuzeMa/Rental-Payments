@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+/*-----------------GetStart--------------------------*/
+
+.getStart-container {
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+  height: 100vh;
+  background: url("./background.jpg");
+  background-size: cover;
+  background-color: rgb(100, 100, 100);
+  background-blend-mode: multiply;
+}
+
+.getStart-button {
+  width: 120px;
+  height: 35px;
+  color: white;
+  background: transparent;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 6px;
+}
+
+.getStart-button:hover {
+  cursor: pointer;
+  width: 125px;
+  height:40px;
+  background:rgb(158, 158, 240);
+  border: rgb(158, 158, 240);
+  font-size: 23px;
+}
+
+/*-----------------SearchPage--------------------------*/
+.searchPage-container {
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+  height: 100vh;
+  background: url("./background.jpg");
+  background-size: cover;
+  background-color: rgb(100, 100, 100);
+  background-blend-mode: multiply;
+}
+
+.searchPage-container input {
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  background: transparent;
+  border-radius: 5px;
+  color: white;
+}
+
+.searchPage-container button {
+  margin-left: 5px;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(252, 178, 94);
+}
+
+.searchPage-container button:hover {
+  cursor: pointer;
+}
+
+.searchPage-container input::-moz-placeholder {
+    color: rgb(252, 178, 94);
+    font-size: 18px;
+}
+.searchPage-container input::-webkit-input-placeholder {
+    color: rgb(252, 178, 94);
+    font-size: 18px;
+}
+.searchPage-container input::-ms-input-placeholder {
+    color: rgb(252, 178, 94);
+    font-size: 18px;
+}
+
+
+/*-----------------Payment--------------------------*/
+.payment-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.search-payment {
+  border-radius: 5px;
+  background: url("./background.jpg");
+  background-size: cover;
+  background-color: rgb(100, 100, 100);
+  background-blend-mode: multiply;
+  color: white;
+  text-align: center;
+  background-position: 0;
+  padding: 10px 0;
+}
+
+.searchPage-container input {
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  background: transparent;
+  border-radius: 5px;
+}
+
+.search-payment h3 {
+  margin-top:0;
+}
+
+.search-payment button {
+  margin-left: 5px;
+  width: 70px;
+  height: 25px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: rgb(252, 178, 94);
+}
+
+.search-payment button:hover {
+  cursor: pointer;
+}
+
+.search-payment input::-moz-placeholder {
+    color: white;
+    font-size: 14px;
+}
+.search-payment input::-webkit-input-placeholder {
+    color: white;
+    font-size: 14px;
+}
+.search-payment input::-ms-input-placeholder {
+    color: white;
+    font-size: 14px;
+}
+
+.search-payment input {
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    width: 130px;
+    height: 30px;
+    border-radius: 4px;
+} 
+
+
+/*-----------------TABLE--------------------------*/
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 10px 5px 5px rgb(92, 89, 89);
+}
+
+thead {
+  border: 3px solid black;
+}
+
+tbody td:nth-child(3),
+tbody td:nth-child(4) {
+  text-align: center;
+}
+
+tbody td:nth-child(1),
+tbody td:nth-child(2) {
+  padding-left: 1%;
+}
+
+tbody tr:nth-child(odd) {
+  background: rgb(211, 207, 207);
+}
+
+td,th {
+  padding: 5px 0; 
+  border-right: 3px solid black;
+}
