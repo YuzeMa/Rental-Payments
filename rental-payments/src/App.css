@@ -1,13 +1,14 @@
 * {
   box-sizing: border-box;
 }
+
 /*-----------------GetStart--------------------------*/
 
 .getStart-container {
   color: white;
   text-align: center;
   padding-top: 200px;
-  height: 100vh;
+  min-height: 100vh;
   background: url("./background.jpg");
   background-size: cover;
   background-color: rgb(100, 100, 100);
@@ -34,15 +35,27 @@
 }
 
 /*-----------------SearchPage--------------------------*/
+
+.searchPage-container table {
+  width: 80%;
+  margin: 50px auto;
+  background: white;
+  color: black;
+  box-shadow: none;
+}
 .searchPage-container {
   color: white;
   text-align: center;
-  padding-top: 200px;
-  height: 100vh;
+  padding-top: 100px;
+  min-height: 100vh;
   background: url("./background.jpg");
   background-size: cover;
   background-color: rgb(100, 100, 100);
   background-blend-mode: multiply;
+}
+
+.searchPage-container form {
+  margin-bottom: 80px;
 }
 
 .searchPage-container input {
@@ -64,6 +77,29 @@
   background-color: rgb(252, 178, 94);
 }
 
+.tenant-wrapper {
+  margin: 0 5px;
+}
+
+.name-wrapper {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.currentTenants-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.personal-icon {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 50%;
+}
+
 .searchPage-container button:hover {
   cursor: pointer;
 }
@@ -83,6 +119,13 @@
 
 
 /*-----------------Payment--------------------------*/
+
+.table-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom : 20px;
+}
+
 .payment-container {
   width: 80%;
   margin: 0 auto;
@@ -175,7 +218,8 @@ tbody td:nth-child(2) {
 }
 
 tbody tr:nth-child(odd) {
-  background: rgb(211, 207, 207);
+  color: black;
+  background: rgb(182, 180, 180);
 }
 
 td,th {
